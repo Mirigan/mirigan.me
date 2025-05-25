@@ -1,0 +1,151 @@
+<div class="font-code">
+  <div class="flex flex-col md:flex-row justify-between mb-4 space-y-2">
+    <div>
+      <div class="text-4xl font-medium">
+        Emilien "MiRiGaN" BILLARD
+      </div>
+      <div class="text-xl font-medium">
+        Ruby Fullstack Developper / DevOps
+      </div>
+      <div class="text-lg font-medium flex items-center">
+        <%= content_tag(:i, nil, class: "ph ph-map-pin text-xl mr-2") %>
+        : <span class="ml-2">Bordeaux, Remote</span>
+      </div>
+      <div class="text-lg font-medium flex items-center">
+        <%= content_tag(:i, nil, class: "ph ph-at text-xl mr-2") %>
+        : <%= link_to 'hello@mirigan.me', 'mailto:hello@mirigan.me', class: 'link ml-2' %>
+      </div>
+      <div class="flex items-center space-x-2 mt-1.5">
+        <%= link_to 'https://github.com/mirigan', target: '_blank', class: "flex items-center" do %>
+          <%= content_tag(:i, nil, class: "ph ph-github-logo text-xl") %>
+        <% end %>
+        <%= link_to 'https://gitlab.com/mirigan', target: '_blank', class: "flex items-center" do %>
+          <%= content_tag(:i, nil, class: "ph ph-gitlab-logo text-xl") %>
+        <% end %>
+        <%= link_to 'https://www.linkedin.com/in/emilien-billard-4b2684123/', target: '_blank', class: "flex items-center" do %>
+          <%= content_tag(:i, nil, class: "ph ph-linkedin-logo text-xl") %>
+        <% end %>
+        <%= link_to 'https://mastodon.top/@mirigan', target: '_blank', class: "flex items-center" do %>
+          <%= content_tag(:i, nil, class: "ph ph-mastodon-logo text-xl") %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="space-y-4 border-4 border-dashed border-gray-200 rounded-lg p-4 w-full">
+      <div>
+        <p class="text-lg font-medium">Langages de programmation :</p>
+        <ul class="list-disc list-inside">
+          <li>Ruby</li>
+          <li>JavaScript, TypeScript</li>
+          <li>SQL</li>
+          <li>HTML, CSS</li>
+          <li>PHP</li>
+          <li>Python</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">Techno :</p>
+        <ul class="list-disc list-inside">
+          <li>RubyOnRails <span class="text-sm text-slate-400">(RSpec, ViewComponents, Hotwire)</span></li>
+          <li>NodeJS <span class="text-sm text-slate-400">(Express, NestJS)</span></li>
+          <li>PostgreSQL</li>
+          <li>TailwindCSS</li>
+          <li>ReactJS / ReactNative</li>
+          <li>Laravel</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">Platform :</p>
+        <ul class="list-disc list-inside">
+          <li>Linux <span class="text-sm text-slate-400">(Debian, Ubuntu, Fedora)</span></li>
+          <li>MacOs</li>
+          <li>Docker, Kubernetes</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">Langues :</p>
+        <ul class="list-disc list-inside">
+          <li>Français <span class="text-sm text-slate-400">(Langue maternelle)</span></li>
+          <li>Anglais <span class="text-sm text-slate-400">(Courant)</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">Loisir / Passion :</p>
+        <ul class="list-disc list-inside">
+          <li>StarWars fan</li>
+          <li>Video games</li>
+          <li>Auto-Moto sports</li>
+          <li>Lego</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 md:col-span-2 border-4 border-dashed border-gray-200 rounded-lg p-4 w-full">
+      <div>
+        <p class="text-lg font-medium">À propos de moi :</p>
+        <p class="text-md mt-2">
+            Habitué au <strong>travail en équipe</strong>, j'en estime les bienfaits : <strong>pair programming, code review</strong> et <strong>partage de connaissances et de compétences</strong>.
+            <br/>
+            Je suis convaincu de la nécessité de travailler au plus près des équipes métiers pour mieux comprendre les <strong>besoins</strong> et <strong>suggérer des solutions adéquates</strong>.
+            Pour cela j'apprécie de concevoir de nouvelles fonctionnalités, mais je suis aussi à l'aise pour travailler sur du code legacy.
+            En gardant en tête des principes comme <strong>TDD, SOLID</strong> et <strong>KISS</strong> que je pratique depuis plus de <strong>8 ans</strong>.
+            <br/>
+            J'adore découvrir de <strong>nouvelle choses à faire</strong>, <strong>commment les faire</strong> ou comment améliorer ma compréhension des <strong>techniques de programmation</strong>.
+        </p>
+        <p class="text-md mt-2">
+          By the way, <strong>MiRIGaN</strong> est mon pseudo que j'utilise partout.
+        </p>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">Experiences :</p>
+        <div class="mt-2">Epicery : Développeur Fullstack Ruby (juin. 2022 - jan. 2025)</div>
+        <ul class="list-disc list-inside text-sm text-slate-400">
+          <li>Techno : RubyOnRails, NodeJS, TailwindCSS, Kubernetes</li>
+          <li>Conception et réalisation de nouvelle fonctionnalités</li>
+          <li>Migration du front de NodeJS vers Rails avec mise en place de ViewComponents</li>
+        </ul>
+
+        <div class="mt-2">LR Technologies : Développeur Fullstack PHP / DevOps (nov. 2019 - jul. 2022)</div>
+        <ul class="list-disc list-inside text-sm text-slate-400">
+          <li>Techno : PHP, Laravel, Kubernetes</li>
+          <li>Mise a jour de Laravel qui était sur une version plus maintenue</li>
+          <li>Migration de l'hébergement des sites internets vers Kubernetes</li>
+          <li>Conception et réalisation de nouvelle fonctionnalités</li>
+        </ul>
+
+        <div class="mt-2">Snapp' : Développeur Back-End Ruby (sept. 2016 - oct. 2019)</div>
+        <ul class="list-disc list-inside text-sm text-slate-400">
+          <li>Techno : RubyOnRails, ReactNative, NodeJS</li>
+          <li>Dévelopement d'API et backend pour de nouvelles applications</li>
+          <li>Dévelopement d'applications avec ReactNative</li>
+          <li>Conception et réalisation de nouvelle fonctionnalités</li>
+        </ul>
+
+        <div class="mt-2">Vision Independent productions : (Stage à Dublin)(févr. 2016 - juin 2016)</div>
+        <ul class="list-disc list-inside text-sm text-slate-400">
+          <li>Techno : Laravel</li>
+          <li>Développement d’une beta pour un application/jeu web en lien avec une émission de télévision en projet.</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-lg font-medium">
+          Formations :
+        </p>
+        <ul class="list-disc list-inside">
+          <li>OpenClassrooms : Tech Lead (2018 - 2019) (Remote)</li>
+          <li>IUT de Bordeaux : Licence Professionnelle, Développement d'Applications Web et Innovation Numériques (DAWIN) (2015 - 2016)</li>
+          <li>IUT de Limoges : DUT Informatique (2013 - 2015)</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
