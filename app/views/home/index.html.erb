@@ -1,151 +1,258 @@
-<div class="font-code">
-  <div class="flex flex-col md:flex-row justify-between mb-4 space-y-2">
-    <div>
-      <div class="text-4xl font-medium">
-        Emilien "MiRiGaN" BILLARD
-      </div>
-      <div class="text-xl font-medium">
-        Ruby Fullstack Developper / DevOps
-      </div>
-      <div class="text-lg font-medium flex items-center">
-        <%= content_tag(:i, nil, class: "ph ph-map-pin text-xl mr-2") %>
-        : <span class="ml-2">Bordeaux, Remote</span>
-      </div>
-      <div class="text-lg font-medium flex items-center">
-        <%= content_tag(:i, nil, class: "ph ph-at text-xl mr-2") %>
-        : <%= link_to 'hello@mirigan.me', 'mailto:hello@mirigan.me', class: 'link ml-2' %>
-      </div>
-      <div class="flex items-center space-x-2 mt-1.5">
-        <%= link_to 'https://github.com/mirigan', target: '_blank', class: "flex items-center" do %>
-          <%= content_tag(:i, nil, class: "ph ph-github-logo text-xl") %>
-        <% end %>
-        <%= link_to 'https://gitlab.com/mirigan', target: '_blank', class: "flex items-center" do %>
-          <%= content_tag(:i, nil, class: "ph ph-gitlab-logo text-xl") %>
-        <% end %>
-        <%= link_to 'https://www.linkedin.com/in/emilien-billard-4b2684123/', target: '_blank', class: "flex items-center" do %>
-          <%= content_tag(:i, nil, class: "ph ph-linkedin-logo text-xl") %>
-        <% end %>
-        <%= link_to 'https://mastodon.top/@mirigan', target: '_blank', class: "flex items-center" do %>
-          <%= content_tag(:i, nil, class: "ph ph-mastodon-logo text-xl") %>
-        <% end %>
+<section class="container mx-auto py-16 px-3 max-w-3xl">
+  <div class="flex justify-center mb-3">
+    <div class="flex flex-col">
+      <%= image_tag "profile.jpg", class: "rounded-full mx-auto", width: 128 %>
+      <div class="text-2xl text-gray-500 font-normal">
+        Emilien <i>"MiRiGaN"</i> <strong class="text-black font-exrtabold">BILLARD</strong>
       </div>
     </div>
   </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="space-y-4 border-4 border-dashed border-gray-200 rounded-lg p-4 w-full">
-      <div>
-        <p class="text-lg font-medium">Langages de programmation :</p>
-        <ul class="list-disc list-inside">
-          <li>Ruby</li>
-          <li>JavaScript, TypeScript</li>
-          <li>SQL</li>
-          <li>HTML, CSS</li>
-          <li>PHP</li>
-          <li>Python</li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">Techno :</p>
-        <ul class="list-disc list-inside">
-          <li>RubyOnRails <span class="text-sm text-slate-400">(RSpec, ViewComponents, Hotwire)</span></li>
-          <li>NodeJS <span class="text-sm text-slate-400">(Express, NestJS)</span></li>
-          <li>PostgreSQL</li>
-          <li>TailwindCSS</li>
-          <li>ReactJS / ReactNative</li>
-          <li>Laravel</li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">Platform :</p>
-        <ul class="list-disc list-inside">
-          <li>Linux <span class="text-sm text-slate-400">(Debian, Ubuntu, Fedora)</span></li>
-          <li>MacOs</li>
-          <li>Docker, Kubernetes</li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">Langues :</p>
-        <ul class="list-disc list-inside">
-          <li>Français <span class="text-sm text-slate-400">(Langue maternelle)</span></li>
-          <li>Anglais <span class="text-sm text-slate-400">(Courant)</span></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">Loisir / Passion :</p>
-        <ul class="list-disc list-inside">
-          <li>StarWars fan</li>
-          <li>Video games</li>
-          <li>Auto-Moto sports</li>
-          <li>Lego</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 gap-4 md:col-span-2 border-4 border-dashed border-gray-200 rounded-lg p-4 w-full">
-      <div>
-        <p class="text-lg font-medium">À propos de moi :</p>
-        <p class="text-md mt-2">
-            Habitué au <strong>travail en équipe</strong>, j'en estime les bienfaits : <strong>pair programming, code review</strong> et <strong>partage de connaissances et de compétences</strong>.
-            <br/>
-            Je suis convaincu de la nécessité de travailler au plus près des équipes métiers pour mieux comprendre les <strong>besoins</strong> et <strong>suggérer des solutions adéquates</strong>.
-            Pour cela j'apprécie de concevoir de nouvelles fonctionnalités, mais je suis aussi à l'aise pour travailler sur du code legacy.
-            En gardant en tête des principes comme <strong>TDD, SOLID</strong> et <strong>KISS</strong> que je pratique depuis plus de <strong>8 ans</strong>.
-            <br/>
-            J'adore découvrir de <strong>nouvelle choses à faire</strong>, <strong>commment les faire</strong> ou comment améliorer ma compréhension des <strong>techniques de programmation</strong>.
-        </p>
-        <p class="text-md mt-2">
-          By the way, <strong>MiRIGaN</strong> est mon pseudo que j'utilise partout.
-        </p>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">Experiences :</p>
-        <div class="mt-2">Epicery : Développeur Fullstack Ruby (juin. 2022 - jan. 2025)</div>
-        <ul class="list-disc list-inside text-sm text-slate-400">
-          <li>Techno : RubyOnRails, NodeJS, TailwindCSS, Kubernetes</li>
-          <li>Conception et réalisation de nouvelle fonctionnalités</li>
-          <li>Migration du front de NodeJS vers Rails avec mise en place de ViewComponents</li>
-        </ul>
-
-        <div class="mt-2">LR Technologies : Développeur Fullstack PHP / DevOps (nov. 2019 - jul. 2022)</div>
-        <ul class="list-disc list-inside text-sm text-slate-400">
-          <li>Techno : PHP, Laravel, Kubernetes</li>
-          <li>Mise a jour de Laravel qui était sur une version plus maintenue</li>
-          <li>Migration de l'hébergement des sites internets vers Kubernetes</li>
-          <li>Conception et réalisation de nouvelle fonctionnalités</li>
-        </ul>
-
-        <div class="mt-2">Snapp' : Développeur Back-End Ruby (sept. 2016 - oct. 2019)</div>
-        <ul class="list-disc list-inside text-sm text-slate-400">
-          <li>Techno : RubyOnRails, ReactNative, NodeJS</li>
-          <li>Dévelopement d'API et backend pour de nouvelles applications</li>
-          <li>Dévelopement d'applications avec ReactNative</li>
-          <li>Conception et réalisation de nouvelle fonctionnalités</li>
-        </ul>
-
-        <div class="mt-2">Vision Independent productions : (Stage à Dublin)(févr. 2016 - juin 2016)</div>
-        <ul class="list-disc list-inside text-sm text-slate-400">
-          <li>Techno : Laravel</li>
-          <li>Développement d’une beta pour un application/jeu web en lien avec une émission de télévision en projet.</li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-lg font-medium">
-          Formations :
-        </p>
-        <ul class="list-disc list-inside">
-          <li>OpenClassrooms : Tech Lead (2018 - 2019) (Remote)</li>
-          <li>IUT de Bordeaux : Licence Professionnelle, Développement d'Applications Web et Innovation Numériques (DAWIN) (2015 - 2016)</li>
-          <li>IUT de Limoges : DUT Informatique (2013 - 2015)</li>
-        </ul>
-      </div>
-    </div>
-
+  <div class="prose text-justify">
+    <p>
+      <strong>Hi! 👋</strong> I'm a Full-Stack Software Developper, based near Bordeaux.
+      <br/>
+      I'm passionate by my work to create <strong>powerfull products</strong> for users and write <strong>well tested clean code</strong>.
+      Over the past few years working in companies, I have gained experience in languages like <strong>Ruby</strong> and <strong>Javascript</strong>, among others. I enjoy working with Git, focusing on software quality, and functional testing.
+    </p>
+    <p>
+      <strong>Learning and discovering</strong> the technologies of tomorrow occupies my free time in order to <strong>improve my projects</strong>, both professional and personal.
+      I'm also a huge enjoyer of discovering new way solve developpers' problems and users' needs.
+    </p>
+    <%# <p>
+      I'm a big lover of open source and self hosting.
+    </p> %>
   </div>
-</div>
+</section>
+
+<section class="py-8 bg-gray-50">
+  <div class="container mx-auto max-w-6xl px-3">
+    <h2 class="uppercase text-center text-4xl mb-8 font-bold">Skills</h2>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2 sm:px-8">
+        <h3 class="mb-4 border-b border-violet-600 pb-4 text-2xl font-bold">Development</h3>
+        <ul class="leading-loose">
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> Ruby / Ruby on Rails / Rspec
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> JavaScript / Express
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> Typescript / Nest
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> SQL / PostgreSQL / MySQL
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> Stimulus / Hotwire
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> PHP / Laravel
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> CSS / Sass / Bootstrap / Tailwind CSS
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/2 sm:px-8 mt-8 md:mt-0">
+        <h3 class="mb-4 border-b border-violet-600 pb-4 text-2xl font-bold">Tools</h3>
+        <ul class="leading-loose">
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> Git
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> GitLab / GitHub
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> GitLabCI / CircleCI / Travis
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> Docker / Podman / Kubernetes
+          </li>
+          <li class="flex items-center">
+            <i class="ph ph-check-circle mr-2 text-violet-600"></i> MacOS / Linux
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-8 container max-w-4xl px-3 mx-auto">
+  <h2 class="uppercase text-center text-4xl mb-8 font-bold">Work Experience</h2>
+  <div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <%= image_tag "experiences/epicery.png", width: 128, loading: "lazy" %>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">June 2022 - January 2025</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Full-Stack Developper at <a href="https://www.epicery.com/" class="underline hover:no-underline" target="_blank" rel="noreferrer">Epicery</a>
+        </p>
+        <p class="mt-1 text-md text-gray-600">
+          Epicery was a marketplace for local shops, I was a Full Stack developer working with Ruby on Rails, Stimulus, PostgreSQL, RSpec, NodeJS and Kubernetes.
+        </p>
+        <ul class="list-disc ms-6 mt-3 space-y-1.5">
+          <li class="ps-1 text-md text-gray-600">Contribute to Epicery B2C web site and API for mobile app / Ruby on Rails, Stimulus, PostgreSQL and RSpec.</li>
+          <li class="ps-1 text-md text-gray-600">Migrate the remaining NodeJS project to our Rails monolithe</li>
+          <li class="ps-1 text-md text-gray-600">Rework UI with the gem ViewComponent, Stimulus and Turbo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <%= image_tag "experiences/lr-technologies.png", width: 128, loading: "lazy" %>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">November 2019 - June 2022</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Full-Stack Developper at <a href="https://lrtechnologies.fr/fr/" class="underline hover:no-underline" target="_blank" rel="noreferrer">LR Technologie Bordeaux</a>
+        </p>
+        <p class="mt-1 text-md text-gray-600">
+          For LR Technologies I worked at Ynov Campus HQ at Mérignac as PHP / Laravel Full-Stack developper.
+        </p>
+        <ul class="list-disc ms-6 mt-3 space-y-1.5">
+          <li class="ps-1 text-md text-gray-600">Update PHP and Laravel version to be up to date.</li>
+          <li class="ps-1 text-md text-gray-600">Migrate hosting to an OVH self hosted Kubernetes cluster.</li>
+          <li class="ps-1 text-md text-gray-600">Integrate a PDF generator and DocuSign service to simplify workflow for teams.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <%= image_tag "experiences/snapp.png", width: 128, loading: "lazy" %>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">September 2016 - October 2019</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Back-End Developper at <a href="https://www.snapp.fr/" class="underline hover:no-underline" target="_blank" rel="noreferrer">Snapp'</a>
+        </p>
+        <p class="mt-1 text-md text-gray-600">
+          Snapp' is an agency wich create mobile application for various client as Monoprix, local municipality or Startups.
+        </p>
+        <ul class="list-disc ms-6 mt-3 space-y-1.5">
+          <li class="ps-1 text-md text-gray-600">I developed API and Back-office to manage applications / Ruby on Rails, PostgreSQL.</li>
+          <li class="ps-1 text-md text-gray-600">Use ReactNative to create cross-platform applications.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <%= image_tag "experiences/vision-inde.png", width: 128, loading: "lazy" %>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">February 2016 - June 2016</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Full-Stack Developper at <a href="https://www.visionindependentproductions.com/" class="underline hover:no-underline" target="_blank" rel="noreferrer">Vision Independent productions</a> for an internship in Dublin
+        </p>
+        <p class="mt-1 text-md text-gray-600">
+          Vision Independent Productions (VIP) is an Irish based company that develops unique entertainment and lifestyle formats for Television and the Web.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-8 container max-w-4xl px-3 mx-auto">
+  <h2 class="uppercase text-center text-4xl mb-8 font-bold">Education</h2>
+  <div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <i class="ph ph-graduation-cap text-2xl"></i>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">September 2018 - June 2019</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Tech Lead - OpenClassRooms
+        </p>
+      </div>
+    </div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <i class="ph ph-graduation-cap text-2xl"></i>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">September 2015 - June 2016</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          Licence Professionnelle DAWIN (Développement d'Application et Innovation Numérique) - IUT de Bordeaux
+        </p>
+      </div>
+    </div>
+    <div class="group relative flex gap-x-5">
+      <div class="relative">
+        <div class="relative z-10 size-6 flex justify-center items-center">
+          <i class="ph ph-graduation-cap text-2xl"></i>
+        </div>
+        <div class="absolute top-8 bottom-2 start-3 w-px bg-gray-200"></div>
+      </div>
+      <div class="grow pb-8 group-last:pb-0">
+        <h3 class="mb-1 text-sm text-gray-600">September 2013 - June 2015</h3>
+        <p class="font-semibold text-lg text-gray-800">
+          DUT Informatique - IUT de Limoges
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-8 container max-w-4xl px-3 mx-auto">
+  <h2 class="uppercase text-center text-4xl mb-8 font-bold">Hobbies</h2>
+  <div class="flex flex-wrap justify-around text-violet-500">
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-terminal-window text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Development</p>
+    </div>
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-game-controller text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Video Games</p>
+    </div>
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-laptop text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Technology</p>
+    </div>
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-flask text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Siences</p>
+    </div>
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-lego text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Lego</p>
+    </div>
+    <div class="w-1/2 md:w-1/3 text-center mb-6">
+      <div class="bg-violet-200 mb-4 inline-block p-8 rounded-full">
+        <i class="ph-light ph-bicycle text-6xl"></i>
+      </div>
+      <p class="text-sm font-bold m-0">Cycling</p>
+    </div>
+  </div>
+</section>

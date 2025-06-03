@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full">
+<html>
   <head>
     <title><%= content_for(:title) || "Mirigan Me" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,9 +23,13 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
 
-  <body class="h-full text-slate-200 bg-slate-700">
-    <main class="container py-6 mx-auto">
+  <body class="h-full text-black bg-white">
+    <%= render "application/menu" %>
+
+    <main>
       <%= yield %>
     </main>
+
+    <%= render "application/footer" %>
   </body>
 </html>
