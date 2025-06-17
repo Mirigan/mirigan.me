@@ -80,6 +80,7 @@ asset_path: /rails/public/assets
 # Configure the image builder.
 builder:
   arch: amd64
+  remote: ssh://mirigan@mirigan.me
 
   # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
   # remote: ssh://docker@docker-builder-server
@@ -92,14 +93,14 @@ builder:
   #   - RAILS_MASTER_KEY
 
 # Use a different ssh user than root
-# ssh:
-#   user: app
+ssh:
+  user: mirigan
 
 # Use accessory services (secrets come from .kamal/secrets).
 accessories:
   db:
     image: postgres:17
-    host: 51.15.115.20
+    host: mirigan.me
     # Change to 5432 to expose port to the world instead of just local network.
     port: "127.0.0.1:5432:5432"
     env:
