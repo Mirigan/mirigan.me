@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+.link {
+  @apply underline hover:no-underline decoration-purple-400;
+}
