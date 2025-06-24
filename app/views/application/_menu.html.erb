@@ -1,7 +1,13 @@
 <header class="px-3">
-  <nav class="container max-w-6xl text-gray py-4">
+  <nav class="text-gray py-4 flex flex-row justify-between">
     <div class="text-2xl text-gray-500 font-normal">
-      Emilien <strong class="text-black font-exrtabold">BILLARD</strong>
+      <a href="<%= root_path %>">Emilien <strong class="text-black font-exrtabold">BILLARD</strong></a>
     </div>
+
+    <% if authenticated? %>
+      <%= link_to admin_session_path, class: "flex border-2 rounded-xl border-violet-600 items-center p-1 text-sm text-violet-600", tabindex: "-1", data: { turbo_method: :delete } do %>
+        <%= content_tag(:i, nil, class: "ph-bold ph-power") %>
+      <% end %>
+    <% end %>
   </nav>
 </header>
