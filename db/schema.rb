@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_20_132620) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_25_144040) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "posts", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.bigint "users_id"
+    t.datetime "published_at", precision: nil
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["users_id"], name: "index_posts_on_users_id"
+  end
 
   create_table "sessions", force: :cascade do |t|
     t.bigint "user_id", null: false
