@@ -1,1 +1,19 @@
-<h1>Admin Index page</h1>
+<section class="container mx-auto py-3 px-3 max-w-3xl">
+  <div class="mb-6">
+    <h1 class="text-2xl text-gray-500 font-normal">Admin Index page</h1>
+  </div>
+
+  <div class="mb-6">
+    <%= link_to "Add blog post", new_admin_post_path, class: "border-2 rounded-xl border-violet-600 bg-violet-600 items-center p-2 text-sm text-white" %>
+  </div>
+
+  <div class="mb-6">
+    <ul class="space-y-3">
+      <% @posts.each do |post| %>
+        <li class="text-xl">
+          <%= link_to post.title, [:admin, post], class: "link" %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</section>
