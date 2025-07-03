@@ -2,10 +2,14 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   namespace :admin do
-    root to: "dashboard#index"
+    root "dashboard#index"
 
+    # Authentification
     resource :session
     resources :passwords, param: :token
+
+    # Blog
+    resources :posts, except: :index
   end
 
   root to: "home#index"
