@@ -1,4 +1,4 @@
-# README
+# MiRiGaN.me
 
 Rails project for my personnal web site
 
@@ -10,7 +10,7 @@ Rails project for my personnal web site
 
 * Database : PostgreSQL
 
-* How to run the test suite : rails test
+* How to run the test suite : `rails test`
 
 * How to run dev :
 
